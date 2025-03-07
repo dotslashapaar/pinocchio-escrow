@@ -1,7 +1,7 @@
 use pinocchio::{self, account_info::AccountInfo, instruction::{Seed, Signer}, program_error::ProgramError, pubkey::find_program_address, ProgramResult};
 use pinocchio_token::{instructions::{CloseAccount, Transfer}, state::TokenAccount};
 
-use crate::state::{escrow, Escrow};
+use crate::state::Escrow;
 
 pub fn process_take_instruction(accounts: &[AccountInfo], _data: &[u8]) -> ProgramResult{
     let [

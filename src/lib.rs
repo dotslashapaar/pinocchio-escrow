@@ -3,6 +3,8 @@ use pinocchio::{account_info::AccountInfo, entrypoint, program_error::ProgramErr
 
 mod instructions;
 mod state;
+mod tests;
+
 
 use instructions::*;
 use state::*;

@@ -2,7 +2,7 @@ use pinocchio::{account_info::AccountInfo, program_error::ProgramError, pubkey, 
 use pinocchio_log::log;
 use pinocchio_token::state::TokenAccount;
 
-use crate::state::{escrow, Escrow};
+use crate::state::Escrow;
 
 
 pub fn process_make_instruction(accounts: &[AccountInfo], data: &[u8]) -> ProgramResult {
